@@ -1,0 +1,19 @@
+.footer-container {
+    background: var(--color-bg-dark);
+    padding: 30px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ft-content-container {
+    border-left: 1px solid #ffffff31;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+}
+.ft-content-container > p {
+    color: #ffffffb2;
+    font-size: 1.4rem;
+}
