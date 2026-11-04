@@ -33,7 +33,9 @@
 }
 .hero-cta {
     margin-top: 30px;
-    padding: 18px 50px;
+    padding: 16px;
+    max-width: 240px;
+    min-width: 240px;
     border: 2px solid var(--color-accent);
     border-radius: 6px;
     font-family: inherit;
@@ -41,4 +43,23 @@
     font-weight: 600;
     background: var(--color-accent);
     cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+.hero-cta:hover {
+    color: var(--color-accent);
+    background: var(--color-bg-dark);
+}
+.arrow-icon {
+    transform: rotate(90deg);
+    border: 2px solid #000;
+    border-radius: 6px;
+}
+.hero-cta:hover .arrow-icon {
+    background: var(--color-accent);
+    border: 2px solid var(--color-accent);
+}
+
+/* /////////////// End Of Hero Section */
