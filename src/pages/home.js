@@ -4,7 +4,7 @@ import pastaSrc from '../assets/images/pasta.png';
 import salmonSrc from '../assets/images/salmon.png';
 import cakeSrc from '../assets/images/cake.png';
 
-export const generateHomePage = (container) => {
+export const generateHomePage = () => {
     const homeHero = document.createElement('div');
     homeHero.classList.add('home-hero');
 
@@ -23,6 +23,7 @@ export const generateHomePage = (container) => {
     const heroCTA = document.createElement('button');
     heroCTA.classList.add('hero-cta');
     heroCTA.textContent = 'Explore Our Menu';
+    heroCTA.dataset.heroCta = 'menu';
     const arrowIcon = document.createElement('img');
     arrowIcon.src = arrowSrc;
     arrowIcon.classList.add('arrow-icon');
@@ -122,5 +123,8 @@ export const generateHomePage = (container) => {
     platesCardContainer.append(steakCard, pastaCard, salmonCard, cakeCard);
     homeBody.append(homeBodyIntroContainer, homeBodyHeader, platesCardContainer);
     // ========================================================
+
+    const container = document.createElement('div');
     container.append(homeHero, homeBody);
+    return container;
 };
