@@ -1,4 +1,63 @@
-.menu-heading {
-    margin-top: 120px;
-    text-align: center;
+.menu-header {
+    height: 89vh;
+}
+.menu-hero {
+    background: url('../assets/images/pages-images/menu-banner.JPG');
+    height: 92%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 60px;
+    gap: 20px;
+}
+
+.menu-hero > p:first-child {
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    letter-spacing: 6px;
+}
+.menu-hero > h1 {
+    color: var(--color-bg-light);
+    font-size: 8rem;
+    width: 50%;
+}
+.menu-hero > p:last-child {
+    color: var(--color-text-muted);
+    font-size: 1.8rem;
+    width: 40%;
+    line-height: 1.5;
+}
+
+.hero-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8%;
+    gap: 100px;
+}
+.nav-list {
+    list-style-type: none;
+}
+.nav-list > a {
+    text-decoration: none;
+    padding: 10px 0;
+}
+.nav-list > a:link {
+    font-size: 1.5rem;
+    color: var(--color-text-muted-dark);
+}
+.nav-list > a:visited {
+    color: var(--color-text-muted-dark);
+}
+.nav-list > a:hover {
+    color: var(--color-bg-dark);
+    border-bottom: 2px solid var(--color-accent);
+}
+.nav-list > a.active {
+    color: var(--color-bg-dark);
+    border-bottom: 2px solid var(--color-accent);
 }

@@ -3,6 +3,7 @@ import { generateHomePage } from './pages/home.js';
 import { createFooter } from './components/footer.js';
 import { navigatePages } from './components/navigation.js';
 import { navigateHeroCTA } from './components/navigation.js';
+
 import './style.css';
 import './styles/navbar.css';
 import './styles/variables.css';

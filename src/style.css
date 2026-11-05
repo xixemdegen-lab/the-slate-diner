@@ -10,3 +10,9 @@ html {
 #main-container {
     min-height: 100vh;
 }
+.menu-body,
+.about-body,
+.contact-body,
+.reserve-body {
+    margin-top: 104px;
+}
