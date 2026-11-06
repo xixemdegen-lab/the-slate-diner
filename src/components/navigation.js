@@ -74,4 +74,55 @@ export function navigatePages() {
             behavior: 'smooth',
         });
     });
+
+    const abtHeroCTA = document.querySelector('#main-container');
+    abtHeroCTA.addEventListener('click', (e) => {
+        const button = e.target.closest('button[data-abt-hero-cta]');
+        if (!button) return;
+
+        mainContainer.replaceChildren(generateReservePage());
+        const navBtns = document.querySelectorAll('.nav-btn');
+        navBtns.forEach((btn) => {
+            btn.classList.remove('active');
+        });
+
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    });
+
+    const abtCTASection = document.querySelector('#main-container');
+    abtCTASection.addEventListener('click', (e) => {
+        const button = e.target.closest('button[data-cta-section]');
+        if (!button) return;
+
+        switch (button.dataset.ctaSection) {
+            case 'reserve':
+                mainContainer.replaceChildren(generateReservePage());
+                const navBtns = document.querySelectorAll('.nav-btn');
+                navBtns.forEach((btn) => {
+                    btn.classList.remove('active');
+                });
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth',
+                });
+                break;
+
+            case 'menu':
+                mainContainer.replaceChildren(generateMenuPage());
+                const naviBtns = document.querySelectorAll('.nav-btn');
+                naviBtns.forEach((btn) => {
+                    btn.classList.remove('active');
+                });
+                document.querySelector('.menu-btn').classList.add('active');
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth',
+                });
+                break;
+        }
+    });
 }

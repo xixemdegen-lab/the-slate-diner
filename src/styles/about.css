@@ -1,4 +1,188 @@
-.about-heading {
-    margin-top: 120px;
-    text-align: center;
+.about-hero {
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url('../assets/images/pages-images/about-dining.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 16px;
+}
+.abt-subtitle {
+    font-size: 1.4rem;
+    color: var(--color-accent);
+    letter-spacing: 2px;
+}
+.abt-title {
+    color: var(--color-bg-light);
+    font-size: 8rem;
+    width: 60%;
+}
+.abt-description {
+    color: var(--color-text-muted);
+    font-size: 1.6rem;
+    width: 50%;
+    line-height: 1.6;
+}
+.about-hero > button {
+    margin-top: 30px;
+    padding: 16px;
+    max-width: 240px;
+    min-width: 240px;
+    border: 2px solid var(--color-accent);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background: var(--color-accent);
+    cursor: pointer;
+}
+.about-hero > button:hover {
+    color: var(--color-accent);
+    background: var(--color-bg-dark);
+}
+
+.from-our-kitchen {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 400px;
+    padding: 120px 60px;
+    background: var(--color-bg-light);
+    gap: 60px;
+}
+
+.from-our-kitchen > div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    justify-content: center;
+}
+.from-our-kitchen > div:first-child {
+    padding: 60px;
+}
+.from-our-kitchen > div > img {
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 20%;
+    box-shadow: 0 0 6px #222222;
+}
+.sec-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sec-subtitle::before {
+    content: '';
+    height: 1px;
+    background-color: var(--color-accent);
+    width: 40px;
+}
+.sec-subtitle > p {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: var(--color-accent);
+}
+.sec-title {
+    font-size: 3rem;
+    font-weight: 500;
+}
+.sec-description {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: var(--color-text-muted-dark);
+}
+
+.our-believe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 60px 60px 60px;
+    background: var(--color-surface-white);
+    gap: 20px;
+}
+.item-two::after {
+    content: '';
+    height: 1px;
+    background-color: var(--color-accent);
+    width: 40px;
+}
+
+.believes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    gap: 60px;
+}
+.believes > div {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--color-accent);
+    gap: 16px;
+}
+.believes > div > p:first-child {
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    font-weight: 600;
+}
+.believes > div > h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.believes > div > p:last-child {
+    font-size: 1.2rem;
+    color: var(--color-text-muted-dark);
+    line-height: 2;
+}
+
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-bg-dark);
+    padding: 60px;
+    border-bottom: 1px solid #4b4a4a;
+    gap: 16px;
+}
+.cta-section > h2 {
+    font-size: 3rem;
+    color: var(--color-bg-light);
+    font-weight: 500;
+}
+.cta-section > P:first-child {
+    color: var(--color-accent);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+.cta-section > p {
+    color: var(--color-text-muted);
+    font-size: 1.5rem;
+}
+.cta-section > div {
+    display: flex;
+    gap: 20px;
+}
+.cta-section > div > button {
+    margin-top: 30px;
+    padding: 16px;
+    max-width: 240px;
+    min-width: 240px;
+    border: 2px solid var(--color-accent);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background: var(--color-accent);
+    cursor: pointer;
+}
+.cta-section > div > button:hover {
+    color: var(--color-accent);
+    background: var(--color-bg-dark);
 }

@@ -164,13 +164,16 @@
     color: var(--color-bg-light);
 }
 .menu-footer-cta > button {
-    background: var(--color-accent);
+    margin-top: 30px;
+    padding: 16px;
+    max-width: 240px;
+    min-width: 240px;
     border: 2px solid var(--color-accent);
-    padding: 15px 20px;
     border-radius: 6px;
-    color: var(--color-bg-dark);
-    /* font-weight: 600; */
-    font-size: 2rem;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background: var(--color-accent);
     cursor: pointer;
 }
 .menu-footer-cta > button:hover {
