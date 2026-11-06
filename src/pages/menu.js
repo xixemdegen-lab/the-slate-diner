@@ -1,3 +1,7 @@
+import burrataSrc from '../assets/images/pages-images/burrata-heirloom.JPG';
+import calamariSrc from '../assets/images/pages-images/crispy-calamari.JPG';
+import scallopsSrc from '../assets/images/pages-images/seared-scallops.JPG';
+
 export function generateMenuPage() {
     const menuBody = document.createElement('div');
     menuBody.classList.add('menu-body');
@@ -61,9 +65,99 @@ export function generateMenuPage() {
 
     // ===========================================================================
 
+    const menuMain = document.createElement('div');
+    menuMain.classList.add('menu-main');
+
     // ===========================================================================
-    menuBody.append(menuHeader);
+    const startersSection = document.createElement('section');
+    startersSection.classList.add('sections');
+    startersSection.setAttribute('id', 'starters');
+
+    const startersSubTitleContainer = document.createElement('div');
+    startersSubTitleContainer.classList.add('subtitle');
+    const startersSubTitle = document.createElement('p');
+    startersSubTitle.textContent = 'TO BEGIN';
+    startersSubTitleContainer.append(startersSubTitle);
+
+    const startersTitle = document.createElement('h2');
+    startersTitle.classList.add('starters-title');
+    startersTitle.textContent = 'Starters';
+
+    const startersCardContainer = document.createElement('div');
+    startersCardContainer.classList.add('dish-card-container');
+
+    const burrataCard = document.createElement('div');
+    burrataCard.classList.add('dish-cards');
+
+    const burrataImg = document.createElement('img');
+    burrataImg.src = burrataSrc;
+
+    const burrataTitleAndPriceContainer = document.createElement('div');
+    burrataTitleAndPriceContainer.classList.add('title-price');
+
+    const burrataTitle = document.createElement('h3');
+    burrataTitle.textContent = 'Burrata & Heirloom Tomato';
+    const burrataPrice = document.createElement('p');
+    burrataPrice.textContent = '$14';
+    burrataTitleAndPriceContainer.append(burrataTitle, burrataPrice);
+    const burrataDescription = document.createElement('p');
+    burrataDescription.textContent = 'Creamy burrata with ripe heirloom tomatoes, fresh basil, olive oil and baisamic drizzle.';
+
+    burrataCard.append(burrataImg, burrataTitleAndPriceContainer, burrataDescription);
+
+    // =========================================================================
+
+    const calamariCard = document.createElement('div');
+    calamariCard.classList.add('dish-cards');
+
+    const calamariImg = document.createElement('img');
+    calamariImg.src = calamariSrc;
+
+    const calamariTitleAndPriceContainer = document.createElement('div');
+    calamariTitleAndPriceContainer.classList.add('title-price');
+
+    const calamariTitle = document.createElement('h3');
+    calamariTitle.textContent = 'Crispy Calamari';
+    const calamariPrice = document.createElement('p');
+    calamariPrice.textContent = '$12';
+    calamariTitleAndPriceContainer.append(calamariTitle, calamariPrice);
+    const calamariDescription = document.createElement('p');
+    calamariDescription.textContent = 'Lightly fried calamari with lemon,fresh parsley and a garlic aioli for dipping.';
+
+    calamariCard.append(calamariImg, calamariTitleAndPriceContainer, calamariDescription);
+
+    // =========================================================================
+
+    const scallopsCard = document.createElement('div');
+    scallopsCard.classList.add('dish-cards');
+
+    const scallopsImg = document.createElement('img');
+    scallopsImg.src = scallopsSrc;
+
+    const scallopsTitleAndPriceContainer = document.createElement('div');
+    scallopsTitleAndPriceContainer.classList.add('title-price');
+
+    const scallopsTitle = document.createElement('h3');
+    scallopsTitle.textContent = 'Seared Scallops';
+    const scallopsPrice = document.createElement('p');
+    scallopsPrice.textContent = '$18';
+    scallopsTitleAndPriceContainer.append(scallopsTitle, scallopsPrice);
+    const scallopsDescription = document.createElement('p');
+    scallopsDescription.textContent = 'Golden pan-seared scallops on sweet pea purée with crisp pancetta and microgreens.';
+
+    scallopsCard.append(scallopsImg, scallopsTitleAndPriceContainer, scallopsDescription);
+
+    // ====================================================================
+    startersCardContainer.append(burrataCard, calamariCard, scallopsCard);
+    startersSection.append(startersSubTitleContainer, startersTitle, startersCardContainer);
+
+    // ===========================================================================
+    menuMain.append(startersSection);
+    menuBody.append(menuHeader, menuMain);
     const container = document.createElement('div');
     container.append(menuBody);
+
+    console.log('Still running');
+
     return container;
 }
