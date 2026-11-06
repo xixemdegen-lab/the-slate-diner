@@ -9,8 +9,8 @@ export const generateHomePage = () => {
     homeHero.classList.add('home-hero');
 
     const heroSlogan = document.createElement('p');
-    heroSlogan.classList.add('hero-slogan');
-    heroSlogan.textContent = 'GOOD FOOD - GREATE COMPANY';
+    heroSlogan.classList.add('slogan');
+    heroSlogan.textContent = 'GOOD FOOD - GREAT COMPANY';
 
     const heroHeader = document.createElement('h1');
     heroHeader.classList.add('hero-header');

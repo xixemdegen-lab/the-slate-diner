@@ -382,13 +382,26 @@ export function generateMenuPage() {
     // ===========================================================================
 
     const menuFooterCTA = document.createElement('div');
+    menuFooterCTA.classList.add('menu-footer-cta');
+
+    const menuFtSubtitle = document.createElement('p');
+    menuFtSubtitle.classList.add('slogan');
+    menuFtSubtitle.textContent = 'GOOD FOOD - GREAT COMPANY';
+
+    const menuFtTitle = document.createElement('h2');
+    menuFtTitle.textContent = 'Hungry yet? Save your table.';
+
+    const menuFtCTA = document.createElement('button');
+    menuFtCTA.dataset.menuCta = 'reserve';
+    menuFtCTA.textContent = 'Reserve a Table';
+
+    menuFooterCTA.append(menuFtSubtitle, menuFtTitle, menuFtCTA);
+
     // ===========================================================================
-    menuMain.append(startersSection, mainsSection, dessertsSection);
+    menuMain.append(startersSection, mainsSection, dessertsSection, menuFooterCTA);
     menuBody.append(menuHeader, menuMain);
     const container = document.createElement('div');
     container.append(menuBody);
-
-    console.log('Still running');
 
     return container;
 }

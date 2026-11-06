@@ -2,7 +2,7 @@ import { createNavBar } from './components/navbar.js';
 import { generateHomePage } from './pages/home.js';
 import { createFooter } from './components/footer.js';
 import { navigatePages } from './components/navigation.js';
-import { navigateHeroCTA } from './components/navigation.js';
+// import { navigateHeroCTA } from './components/navigation.js';
 
 import './style.css';
 import './styles/navbar.css';
@@ -22,4 +22,4 @@ createNavBar(navContainer);
 createFooter(footerContainer);
 mainContainer.append(generateHomePage());
 navigatePages();
-navigateHeroCTA();
+// navigateHeroCTA();

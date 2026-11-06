@@ -36,9 +36,9 @@ export function navigatePages() {
             behavior: 'smooth',
         });
     });
-}
 
-export function navigateHeroCTA() {
+    // ==================================================================
+
     const heroCTA = document.querySelector('#main-container');
     heroCTA.addEventListener('click', (e) => {
         const button = e.target.closest('button[data-hero-cta]');
@@ -54,6 +54,24 @@ export function navigateHeroCTA() {
             top: 0,
             behavior: 'smooth',
         });
-        console.log('clicked');
+    });
+
+    // =================================================================
+
+    const menuFtCTA = document.querySelector('#main-container');
+    menuFtCTA.addEventListener('click', (e) => {
+        const button = e.target.closest('button[data-menu-cta]');
+        if (!button) return;
+
+        mainContainer.replaceChildren(generateReservePage());
+        const navBtns = document.querySelectorAll('.nav-btn');
+        navBtns.forEach((btn) => {
+            btn.classList.remove('active');
+        });
+
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
     });
 }
