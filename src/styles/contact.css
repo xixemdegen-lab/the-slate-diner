@@ -1,4 +1,207 @@
-.contact-heading {
-    margin-top: 120px;
+.contact-hero {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    background: url('../assets/images/pages-images/contact-banner.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+}
+.contact-subtitle {
+    font-size: 1.2rem;
+    color: var(--color-accent);
+    letter-spacing: 2px;
+}
+.contact-title {
+    font-size: 6rem;
+    color: var(--color-bg-light);
+}
+.contact-description {
+    color: var(--color-text-muted);
+    font-size: 1.6rem;
+    width: 40%;
+    line-height: 1.5;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 60px;
+    gap: 20px;
+    align-items: center;
+}
+.contact-form > .form {
+    max-width: 700px;
+    /* max-height: 500px; */
+    padding: 28px;
+    box-shadow: 0 0 2px var(--color-text-muted-dark);
+    border-radius: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form > h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
     text-align: center;
+}
+fieldset {
+    display: flex;
+    width: 100%;
+    border: none;
+    gap: 20px;
+}
+.input-group {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 6px;
+}
+.input-group > label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--color-text-muted-dark);
+}
+.input-group > input,
+.input-group > select,
+.input-group > textarea {
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 1px solid var(--color-text-muted);
+    border-radius: 4px;
+}
+
+form > button {
+    padding: 12px;
+    max-width: 150px;
+    border: 2px solid var(--color-accent);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background: var(--color-accent);
+    cursor: pointer;
+}
+
+form > button:hover {
+    color: var(--color-accent);
+    background: var(--color-bg-dark);
+    border: 2px solid var(--color-bg-dark);
+}
+
+.address-map {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: end;
+}
+
+.address-container {
+    background: var(--color-bg-dark);
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 70%;
+}
+.infos {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+.infos > img {
+    width: 20px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.title {
+    color: var(--color-accent);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+.details {
+    color: var(--color-bg-light);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.map {
+    width: 70%;
+}
+.map > img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--color-text-muted-dark);
+    cursor: pointer;
+}
+
+.feedback-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.feedback-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.feedback-screen {
+    background: var(--color-bg-light);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+    width: 40%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.feedback-title {
+    font-size: 3rem;
+    color: var(--color-bg-dark);
+}
+.feedback-subtitle {
+    font-size: 1.4rem;
+}
+.feedback-screen > img {
+    width: 100px;
+}
+.feedback-desc {
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.5;
+}
+.feedback-screen > button {
+    padding: 16px 26px;
+    border: 2px solid var(--color-accent);
+    border-radius: 4px;
+    background: var(--color-bg-dark);
+    color: var(--color-accent);
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.feedback-screen > button:hover {
+    background: var(--color-accent);
+    color: var(--color-bg-dark);
+    border-color: var(--color-bg-dark);
 }

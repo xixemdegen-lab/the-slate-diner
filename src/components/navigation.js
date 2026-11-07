@@ -125,4 +125,21 @@ export function navigatePages() {
                 break;
         }
     });
+
+    const feedbackBtn = document.querySelector('#main-container');
+
+    feedbackBtn.addEventListener('click', (e) => {
+        const button = e.target.closest('button[data-nav-to]');
+        if (!button) return;
+
+        mainContainer.replaceChildren(generateHomePage());
+        document.querySelectorAll('.nav-btn').forEach((btn) => {
+            btn.classList.remove('active');
+        });
+        document.querySelector('.home-btn').classList.add('active');
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    });
 }

@@ -1,4 +1,4 @@
-import logoSrc from '../assets/images/logos/white.svg';
+import logoSrc from '../assets/images/logos/gold.svg';
 
 export function createFooter(container) {
     const logoIcon = document.createElement('img');

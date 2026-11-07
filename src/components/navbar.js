@@ -13,7 +13,7 @@ export const createNavBar = (container) => {
 
     const homeBtn = document.createElement('button');
     homeBtn.textContent = 'Home';
-    homeBtn.classList.add('nav-btn', 'active');
+    homeBtn.classList.add('nav-btn', 'active', 'home-btn');
     homeBtn.dataset.pageName = 'home';
 
     const menuBtn = document.createElement('button');
