@@ -1,4 +1,294 @@
-.reserve-heading {
-    margin-top: 120px;
+.reserve-body {
+    background: var(--color-bg-light);
+}
+.reserve-hero {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.reserve-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.reserve-subtitle::before,
+.reserve-subtitle::after {
+    content: '';
+    height: 1px;
+    background-color: var(--color-accent);
+    width: 50px;
+}
+.reserve-subtitle > p {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: var(--color-accent);
+}
+.reserve-title {
+    font-size: 6rem;
+    color: var(--color-bg-dark);
+    letter-spacing: 2px;
+}
+.reserve-desc {
+    font-size: 1.6rem;
+    width: 400px;
     text-align: center;
+    color: var(--color-text-muted-dark);
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.reserve-form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 60px;
+}
+.form-sect {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 16px;
+}
+.reserve-form {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 2px var(--color-text-muted);
+    background: var(--color-surface-white);
+    border-radius: 10px;
+    padding: 24px;
+    align-items: center;
+    gap: 16px;
+}
+.reserve-form > fieldset {
+    padding: 16px;
+    border: 1px solid var(--color-accent);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+}
+.reserve-form > fieldset > legend {
+    padding: 6px;
+    font-size: 1.4rem;
+    letter-spacing: 1.4px;
+    font-weight: 600;
+    color: var(--color-accent);
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.input-group > label {
+    font-size: 1.4rem;
+    letter-spacing: 1.4px;
+    color: var(--color-bg-dark);
+}
+.input-group > input,
+.input-group > select,
+.input-group > textarea {
+    padding: 16px;
+    border-radius: 6px;
+    border: 1px solid var(--color-text-muted);
+    font-size: 1.4rem;
+}
+.info-group-ctnr {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+.reserve-btn {
+    width: 100%;
+    font-size: 1.4rem;
+    color: var(--color-bg-dark);
+    background: var(--color-accent);
+    border: 2px solid var(--color-accent);
+    padding: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+}
+.reserve-btn:hover {
+    border-color: var(--color-accent);
+    background: var(--color-bg-dark);
+    color: var(--color-accent);
+}
+.reserve-form > p {
+    font-size: 1.2rem;
+    color: var(--color-text-muted-dark);
+    letter-spacing: 1.4px;
+}
+
+.tips-sect {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+}
+
+.tips-sect-container {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    gap: 30px;
+}
+.top {
+    background: var(--color-bg-dark);
+    border-radius: 10px;
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.img-container {
+    width: 100%;
+    height: 550px;
+}
+.img-container > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.top-title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.top-title-container > h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--color-bg-light);
+}
+.top-title-container > p {
+    font-size: 1.2rem;
+    color: var(--color-accent);
+    letter-spacing: 2px;
+}
+
+.bottom {
+    background: var(--color-bg-dark);
+    border-radius: 10px;
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.bottom-title {
+    font-size: 1.2rem;
+    color: var(--color-accent);
+    letter-spacing: 2px;
+}
+
+.to-know {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.to-know::before {
+    content: '';
+    height: 1px;
+    background: var(--color-accent);
+    width: 16px;
+}
+.to-know > p {
+    font-size: 1.7rem;
+    color: var(--color-bg-light);
+}
+
+.reserve-confirmation {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.conf-screen {
+    background: var(--color-bg-light);
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.outer-circle {
+    width: 80px;
+    height: 80px;
+    padding: 14px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #b6853b1f;
+}
+.inner-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #b6853b;
+}
+
+.reserve-confirm-title {
+    font-size: 2.4rem;
+    width: 60%;
+    text-align: center;
+    line-height: 1.5;
+}
+.reserve-confirm-subtitle {
+    font-size: 1.6rem;
+    width: 60%;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1.4px;
+    color: var(--color-text-muted-dark);
+}
+
+.reserve-details-container {
+    background: #b6853b1f;
+    width: 45%;
+    padding: 20px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.detail-group {
+    display: flex;
+    justify-content: space-between;
+}
+.detail-group > p {
+    font-size: 1.4rem;
+}
+.detail-title {
+    color: var(--color-text-muted-dark);
+    letter-spacing: 1.4px;
+}
+.reserve-popup {
+    width: 45%;
+    padding: 14px;
+    border: 2px solid var(--color-bg-dark);
+    background: var(--color-bg-dark);
+    color: var(--color-bg-light);
+    font-size: 1.4rem;
+    letter-spacing: 1.4px;
+    border-radius: 14px;
+    cursor: pointer;
+}
+.reserve-popup:hover {
+    background: var(--color-accent);
+    color: var(--color-bg-dark);
 }

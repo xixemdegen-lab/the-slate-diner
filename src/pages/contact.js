@@ -56,7 +56,7 @@ export function generateContactPage() {
                                 </div>
                             </fieldset>
 
-                            <button data-form-btn="submit">Send Message</button>
+                            <button data-form-btn="submit" class="contact-send-btn">Send Message</button>
                         </form>
                     </section>
 
