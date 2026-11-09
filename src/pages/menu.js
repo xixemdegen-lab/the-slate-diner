@@ -88,7 +88,7 @@ export function generateMenuPage() {
     startersSubTitleContainer.append(startersSubTitle);
 
     const startersTitle = document.createElement('h2');
-    startersTitle.classList.add('title');
+    startersTitle.classList.add('course-title');
     startersTitle.textContent = 'Starters';
 
     const startersCardContainer = document.createElement('div');
@@ -175,7 +175,7 @@ export function generateMenuPage() {
     mainsSubTitleContainer.append(mainsSubTitle);
 
     const mainsTitle = document.createElement('h2');
-    mainsTitle.classList.add('title');
+    mainsTitle.classList.add('course-title');
     mainsTitle.textContent = 'Mains';
 
     const mainsCardContainer = document.createElement('div');
@@ -304,7 +304,7 @@ export function generateMenuPage() {
     dessertsSubTitleContainer.append(dessertsSubTitle);
 
     const dessertsTitle = document.createElement('h2');
-    dessertsTitle.classList.add('title');
+    dessertsTitle.classList.add('course-title');
     dessertsTitle.textContent = 'Desserts';
 
     const dessertsCardContainer = document.createElement('div');
